@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>E-Commerce Site</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <section id="login">
+      <div class="login-img">
+        <img src="image\login-img.jpg" alt="" />
+      </div>
+      <section id="user-login">
+        <div class="logo">
+          <img src="image\logo1.png" alt="" />
+          <i class="fa-solid fa-xmark" onclick="goBack()"></i>
+        </div>
+
+        <section id="heading">
+          <div class="heading">
+            <h2>Sign up</h2>
+            <p>It's free and only takes a minute.</p>
+          </div>
+
+          <div class="email">
+            <p class="email-text">First Name</p>
+            <input type="text" placeholder="First Name" />
+          </div>
+
+          <div class="email">
+            <p class="email-text">Last Name</p>
+            <input type="text" placeholder="Last Name" />
+          </div>
+
+          <div class="email">
+            <p class="email-text">Email Address</p>
+            <input type="email" placeholder="hello@example.com" />
+          </div>
+
+          <div class="password">
+            <div>
+              <p class="email-text">Password</p>
+            </div>
+            <div class="password-eye">
+              <input
+                type="password"
+                placeholder="Enter Your Password"
+                id="mypassword"
+              />
+              <span class="eye" onclick="myfunction()">
+                <i id="hide1" class="fa-solid fa-eye"></i>
+                <i id="hide2" class="fa-solid fa-eye-slash"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="confirm-password">
+            <div>
+              <p class="email-text">Confirm Password</p>
+            </div>
+            <div class="password-eye">
+              <input
+                type="password"
+                placeholder="Enter Your Confirm Password"
+                id="myconfirmpassword"
+              />
+              <span class="eye" onclick="mysfunction()">
+                <i id="hide3" class="fa-solid fa-eye"></i>
+                <i id="hide4" class="fa-solid fa-eye-slash"></i>
+              </span>
+            </div>
+          </div>
+
+          <div class="button">
+            <button>Continue</button>
+          </div>
+
+          <div class="check-box-sign">
+            <input type="checkbox" />
+            <div class="checkbox-text">
+              <p>By clicking the sign up button,you are agree to our <br>
+                 <a href="#">Terms and Conditions</a> and <a href="#">Policy Privacy</a>.</p>
+              </div>
+
+          </div>
+
+        
+        </section>
+        <div class="sign-up">
+          <p>Already have an Account ?</p>
+          <a href="user.html">Sign in here</a>
+        </div>
+      </section>
+    </section>
+    <script>
+          function myfunction(){
+              let x =document.getElementById("mypassword");
+              let y =document.getElementById("hide1");
+              let z =document.getElementById("hide2");
+
+              if(x.type === "password"){
+                  x.type = "text";
+                  y.style.display = "block";
+                  z.style.display = "none";
+              }
+              else{
+                  x.type = "password";
+                  y.style.display = "none";
+                  z.style.display = "block";
+              }
+          }
+
+
+          function mysfunction(){
+              let x =document.getElementById("myconfirmpassword");
+              let y =document.getElementById("hide3");
+              let z =document.getElementById("hide4");
+
+              if(x.type === "password"){
+                  x.type = "text";
+                  y.style.display = "block";
+                  z.style.display = "none";
+              }
+              else{
+                  x.type = "password";
+                  y.style.display = "none";
+                  z.style.display = "block";
+              }
+          }
+
+
+          function goBack() {
+        window.history.back();
+      }
+
+      </script
+      <script src="script.js">
+    </script>
+   
+</html>
